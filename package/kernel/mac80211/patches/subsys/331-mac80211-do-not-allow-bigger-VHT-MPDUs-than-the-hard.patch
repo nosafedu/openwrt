@@ -10,7 +10,7 @@ Signed-off-by: Felix Fietkau <nbd@nbd.name>
 
 --- a/net/mac80211/vht.c
 +++ b/net/mac80211/vht.c
-@@ -170,10 +170,7 @@ ieee80211_vht_cap_ie_to_sta_vht_cap(stru
+@@ -168,10 +168,7 @@ ieee80211_vht_cap_ie_to_sta_vht_cap(stru
  	/* take some capabilities as-is */
  	cap_info = le32_to_cpu(vht_cap_ie->vht_cap_info);
  	vht_cap->cap = cap_info;
@@ -22,7 +22,7 @@ Signed-off-by: Felix Fietkau <nbd@nbd.name>
  			IEEE80211_VHT_CAP_VHT_TXOP_PS |
  			IEEE80211_VHT_CAP_HTC_VHT |
  			IEEE80211_VHT_CAP_MAX_A_MPDU_LENGTH_EXPONENT_MASK |
-@@ -182,6 +179,9 @@ ieee80211_vht_cap_ie_to_sta_vht_cap(stru
+@@ -180,6 +177,9 @@ ieee80211_vht_cap_ie_to_sta_vht_cap(stru
  			IEEE80211_VHT_CAP_RX_ANTENNA_PATTERN |
  			IEEE80211_VHT_CAP_TX_ANTENNA_PATTERN;
  
